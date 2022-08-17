@@ -25,8 +25,8 @@ driver.get("https://www.pinterest.fr/login/")
 login_box = driver.find_element(by=By.ID, value="email")  # finding email field
 pswd_box = driver.find_element(by=By.ID, value="password")  # finding pswd field
 
-login_box.send_keys(LOGIN)  # writing email
-pswd_box.send_keys(PSWD)  # writing email
+login_box.send_keys(login)  # writing email
+pswd_box.send_keys(pswd)  # writing email
 
 login_button = driver.find_element(by=By.CSS_SELECTOR, value=".SignupButton")  # finding login button
 login_button.click()  # clicking on it
